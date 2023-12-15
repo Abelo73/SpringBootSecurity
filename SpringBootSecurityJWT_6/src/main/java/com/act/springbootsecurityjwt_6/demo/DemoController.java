@@ -26,7 +26,6 @@ public class DemoController {
     @GetMapping
     public ResponseEntity<List<User>> getUsers(){
         List<User> users = jwtService.getAllUsers();
-
         return ResponseEntity.ok(users);
     }
 }

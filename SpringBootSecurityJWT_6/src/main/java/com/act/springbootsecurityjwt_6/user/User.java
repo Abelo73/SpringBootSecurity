@@ -23,12 +23,17 @@ import java.util.List;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue
+    @SequenceGenerator(name = "custom_id_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
     private String firstname;
     private String lastname;
     private String email;
     private String password;
+    @Lob
+    @Column(name = "image")
+    private byte[] image;
+
 
 
     @Enumerated(EnumType.STRING)
