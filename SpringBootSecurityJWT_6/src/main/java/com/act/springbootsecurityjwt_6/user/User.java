@@ -33,9 +33,6 @@ public class User implements UserDetails {
     @Lob
     @Column(name = "image")
     private byte[] image;
-
-
-
     @Enumerated(EnumType.STRING)
     private Role role;
 

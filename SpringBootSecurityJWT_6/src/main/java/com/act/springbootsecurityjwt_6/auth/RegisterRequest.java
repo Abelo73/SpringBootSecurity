@@ -15,5 +15,5 @@ public class RegisterRequest {
     private String lastname;
     private String email;
     private String password;
-    private byte[] image;
+//    private byte[] image;
 }

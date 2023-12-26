@@ -18,10 +18,7 @@ public class DemoController {
 
     private final JwtService jwtService;
 
-//    @GetMapping
-//    public ResponseEntity<String> sayHello(){
-//        return ResponseEntity.ok("Hello from Spring Security");
-//    }
+
 
     @GetMapping
     public ResponseEntity<List<User>> getUsers(){
